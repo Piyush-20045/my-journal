@@ -1,14 +1,17 @@
 MyJournal 📝
-A full-stack journal app built with React, Firebase, and ImageKit.
+A full-stack journal app built with React, Tailwind CSS, ExpressJs, and Firebase.
 
 -- Features
 - Create, edit, delete journals
-- Upload images using 
-- Public/private visibility
-- Responsive design
+- Upload images if you want! 
+- Public/private visibility of your journals
+- Fully responsive UI
 
 -- Tech Stack
 - React + Tailwind CSS
 - Firebase (Auth + Firestore)
-- ImageKit (media upload)
-- Express (backend for media auth)
+- ImageKit (Media storage)
+- Express (Backend for media upload auth)
+
+# Live Demo
+- https://my-journal-swart.vercel.app/
