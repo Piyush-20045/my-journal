@@ -1,0 +1,19 @@
+.customQuill {
+    background-color: white;
+}
+.customQuill .ql-editor {
+    height: 250px;
+    font-size: medium;
+    color: #1f2937;
+    background-color: white;
+}
+.ql-editor:not(.ql-blank)::before {
+  display: none !important;
+}
+
+/* Fix Quill bullet and number lists */
+.rendered-quill ol {
+  list-style-type: decimal;
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+}
