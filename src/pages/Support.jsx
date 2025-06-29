@@ -82,7 +82,7 @@ const Support = () => {
           </h3>
           {/* GMAIL */}
           <p className="flex gap-1 text-gray-700 mb-2">
-            <img src="./src/assets/gmail.png" className="w-9 h-9" />
+            <img src="/gmail.png" className="w-9 h-9" />
             <a
               href="mailto:py624833@gmail.com"
               className="text-blue-600 underline"
@@ -92,7 +92,7 @@ const Support = () => {
           </p>
           {/* TWITTER */}
           <p className="flex gap-1 text-gray-700">
-            <img src="./src/assets/twitter.png" className="w-9 h-8" />
+            <img src="/twitter.png" className="w-9 h-8" />
             <a
               href="https://x.com/Piyush9436"
               target="_blank"

@@ -52,7 +52,7 @@ const Search = ({ mode }) => {
           value={filterDates[mode]}
           onChange={handleDate}
         />
-        <img src="./src/assets/date.svg" className="md:hidden ml-2 absolute h-5 w-5" />
+        <img src="/date.svg" className="md:hidden ml-2 absolute h-5 w-5" />
       </div>
     </div>
   );

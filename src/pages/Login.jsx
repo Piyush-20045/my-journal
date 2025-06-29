@@ -94,7 +94,7 @@ const Login = () => {
           className="flex items-center justify-center p-2 w-full font-semibold border rounded hover:bg-gray-200 cursor-pointer shadow-md"
         >
           <span>
-            <img src="./src/assets/google.svg" className="inline mr-2 h-7 w-7" />
+            <img src="/google.svg" className="inline mr-2 h-7 w-7" />
           </span>
           Continue with Google
         </button>

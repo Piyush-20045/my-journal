@@ -74,7 +74,7 @@ const Navbar = () => {
         to="/"
         className="px-2 py-1 ml-12 border rounded-xl bg-gray-600 shadow-2xl flex items-center cursor-pointer"
       >
-        <img src="./src/assets/journalLogo.png" className="mr-0.5 w-8 h-8 " />
+        <img src="/journalLogo.png" className="mr-0.5 w-8 h-8 " />
         <span className="text-white font-mono font-bold text-lg">
           MyJournal
         </span>
