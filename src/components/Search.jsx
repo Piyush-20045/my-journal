@@ -42,7 +42,7 @@ const Search = ({ mode }) => {
       {/* DATE INPUT */}
       <div className="flex items-center bg-gray-100">
         {filterDates[mode] === "" ? (
-          <label className="md:hidden absolute w-29 ml-9 text-gray-500 pointer-events-none ">
+          <label className="sm:hidden absolute w-29 ml-9 text-gray-500 pointer-events-none ">
             Select Date
           </label>
         ) : null}
