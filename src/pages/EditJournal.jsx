@@ -23,7 +23,7 @@ const EditJournal = () => {
   const handleUpload = async () => {
     if (!image) return;
 
-    const authRes = await fetch("http://localhost:5000/auth");
+    const authRes = await fetch(`${import.meta.env.VITE_BACKEND_URL}/auth`);
     const auth = await authRes.json();
 
     const formData = new FormData();

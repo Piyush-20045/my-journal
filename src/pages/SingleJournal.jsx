@@ -15,7 +15,6 @@ const SingleJournal = () => {
   const journal =
     journals.find((j) => j.id === id) ||
     publicJournals.find((j) => j.id === id);
-    console.log(journal)
 
   // Showing if its loading or not found
   if (!journal) return <div className="p-10">Journal not found.</div>;
