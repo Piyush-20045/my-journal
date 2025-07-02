@@ -3,7 +3,7 @@ A full-stack journal app built with React, Tailwind CSS, ExpressJs, and Firebase
 
 -- Features
 - Create, edit, delete journals
-- Upload images if you want! 
+- Upload images if you want!
 - Public/private visibility of your journals
 - Fully responsive UI
 
@@ -12,6 +12,8 @@ A full-stack journal app built with React, Tailwind CSS, ExpressJs, and Firebase
 - Firebase (Auth + Firestore)
 - ImageKit (Media storage)
 - Express (Backend for media upload auth)
+-- Other Tools
+  - React-quill-new (Rich text-editor) and EmailJs
 
 # Live Demo
 - https://my-journal-swart.vercel.app/
