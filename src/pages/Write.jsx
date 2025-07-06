@@ -47,6 +47,7 @@ const Write = () => {
       const formData = new FormData();
       formData.append("file", compressedFile);
       formData.append("fileName", compressedFile.name);
+      formData.append("folder", "MyJournal");
       formData.append("publicKey", auth.publicKey);
       formData.append("signature", auth.signature);
       formData.append("expire", auth.expire);
