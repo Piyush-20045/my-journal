@@ -69,6 +69,9 @@ const Write = () => {
     }
   };
 
+  // executing handleUpload function
+    const imageData = handleUpload();
+
   // handleSubmit function for text Data
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -80,8 +83,6 @@ const Write = () => {
       return;
     }
 
-    // executing handleUpload function
-    const imageData = await handleUpload();
     const imageUrl = imageData?.url;
     const fileId = imageData?.fileId;
 
