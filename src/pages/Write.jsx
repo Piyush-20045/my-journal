@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "react-quill-new/dist/quill.snow.css";
 import ReactQuill from "react-quill-new";
@@ -13,6 +13,9 @@ import imageCompression from "browser-image-compression";
 const Write = () => {
   const { user } = useAuth();
   const [image, setImage] = useState(null);
+
+  const [imageUrl, setImageUrl] = useState(null);
+  const [fileId, setFileId] = useState(null);
 
   const {
     date,
@@ -62,15 +65,22 @@ const Write = () => {
       );
 
       const data = await response.json();
+
+      setImageUrl(data.url);
+      setFileId(data.fileId);
+
       if (!response.ok) throw new Error(data.message || "Image upload failed");
-      return data;
     } catch (error) {
       console.error("Upload failed:", error);
     }
   };
 
   // executing handleUpload function
-    const imageData = handleUpload();
+  useEffect(() => {
+    if(image){
+      handleUpload();
+    }
+  }, [image]);
 
   // handleSubmit function for text Data
   const handleSubmit = async (e) => {
@@ -82,9 +92,6 @@ const Write = () => {
       setLoading(false);
       return;
     }
-
-    const imageUrl = imageData?.url;
-    const fileId = imageData?.fileId;
 
     try {
       await addDoc(collection(db, "journals"), {
